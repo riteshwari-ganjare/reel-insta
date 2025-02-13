@@ -1,0 +1,44 @@
+/* ReelFooter.css */
+@keyframes spinTheRecord {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .videoFooter_Record {
+    animation: spinTheRecord infinite 5s linear;
+    height: 50px;
+    filter: invert(1); 
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    z-index: 1; 
+  }
+  @keyframes scrollSongName {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .song-name-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+  }
+  
+  .song-name {
+    animation: scrollSongName 10s linear infinite;
+    white-space: nowrap;
+    display: inline-block;
+    padding-left: 10px;
+  }
+  
+  .your-class {
+    color: black !important;
+  }

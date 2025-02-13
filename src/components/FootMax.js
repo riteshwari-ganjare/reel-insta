@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import { Box, Button, Typography } from "@mui/material";
@@ -8,16 +9,15 @@ const ReelFooter = ({ channel, description, song }) => {
   return (
     <Box
       sx={{
-        position: "absolute",
-        bottom: "4px",
-        left: "4px",
+        left: "20px",
         right: "20px",
-        color: "white",
+        color: "black", 
         display: "flex",
         flexDirection: "column",
         justifyContent: "flex-start",
         alignItems: "flex-start",
         zIndex: 1,
+        padding:"10px 0px"
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -30,15 +30,15 @@ const ReelFooter = ({ channel, description, song }) => {
         />
 
         <Box sx={{ ml: 2 }}>
-          <Typography sx={{ fontSize: "10px", fontWeight: "bold", mb: 0.5 }}>
+          <Typography sx={{ fontSize: "10px", fontWeight: "bold", mb: 0.5, color: "#000 !important" }}>
             {description}
           </Typography>
-          
+
           <Box sx={{ display: "flex", alignItems: "center", fontSize: "8px" }}>
             <MusicNoteIcon sx={{ fontSize: "12px", mr: 1 }} />
             <div className="song-name-container">
               <div className="song-name">
-                <Typography sx={{  fontSize: "10px" }}>
+                <Typography sx={{ fontWeight: "bold", fontSize: "10px", color: "#000 !important" }}>
                   {song}
                 </Typography>
               </div>
@@ -51,21 +51,22 @@ const ReelFooter = ({ channel, description, song }) => {
             size="small"
             sx={{
               fontSize: "10px",
-              color: "#fff",
-              border: "2px solid white",
-              fontWeight:"bold"
+              color: "#000 !important", // Ensure the button text is black
+              border: "2px solid #000",
             }}
           >
             Follow
           </Button>
         </Box>
       </Box>
+
       <img
         className="videoFooter_Record"
         src="https://static.thenounproject.com/png/934821-200.png"
         alt="Record Icon"
       />
-      <Typography sx={{ fontSize: "12px", fontWeight: "bold" }}>
+
+      <Typography sx={{ fontSize: "12px", fontWeight: "bold", color: "#000 !important" }}>
         @{channel}
       </Typography>
     </Box>

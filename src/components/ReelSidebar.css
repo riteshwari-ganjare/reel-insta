@@ -1,0 +1,17 @@
+.videoSidebar{
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    color: white;
+}
+.videoSidebar_button{
+    padding: 15px;
+    text-align: center;
+}
+.fa-tiktok {
+    color: #fff;
+    font-size: 3em;
+    border-radius: 100%;
+    text-shadow: 3px 3px #ff3353fc,
+     -3px -3px cyan;
+}

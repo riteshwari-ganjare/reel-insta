@@ -5,6 +5,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import MessageIcon from "@mui/icons-material/Message";
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import TelegramIcon from '@mui/icons-material/Telegram';
+import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 const ReelSidebar = ({ likes, shares, messages }) => {
   const [liked, setLiked] = useState(false);
 
@@ -25,7 +26,7 @@ const ReelSidebar = ({ likes, shares, messages }) => {
         <i
           className="fab fa-tiktok"
           style={{
-            color: "#fff",
+            color: "#000",
             fontSize: "2.5em",
             borderRadius: "50%",
             textShadow: "3px 3px #ff3353fc, -3px -3px cyan",
@@ -36,30 +37,34 @@ const ReelSidebar = ({ likes, shares, messages }) => {
       <Box sx={{ padding: "10px", textAlign: "center" }}>
         {liked ? (
           <FavoriteIcon
-            fontSize="large"
+            fontSize="medium"
             onClick={() => setLiked(false)}
-            sx={{ cursor: "pointer" }}
+            sx={{ cursor: "pointer",color:"#000" }}
           />
         ) : (
           <FavoriteBorderIcon
             fontSize="small"
             onClick={() => setLiked(true)}
-            sx={{ cursor: "pointer" }}
+            sx={{ cursor: "pointer",color:"#000" }}
           />
         )}
-        <Typography sx={{ marginTop: "5px" }}>{liked ? likes + 1 : likes}</Typography>
+        <Typography sx={{ marginTop: "5px" ,color:"#000"}}>{liked ? likes + 1 : likes}</Typography>
       </Box>
 
-      <Box sx={{ padding: "10px", textAlign: "center" }}>
+      <Box sx={{ padding: "10px", textAlign: "center" ,color:"#000"}}>
         <MessageIcon fontSize="small" />
-        <Typography sx={{ marginTop: "5px" }}>{messages}</Typography>
+        <Typography sx={{ marginTop: "5px" ,color:"#000"}}>{messages}</Typography>
       </Box>
 
-      <Box sx={{ padding: "10px", textAlign: "center" }}>
+      <Box sx={{ padding: "10px", textAlign: "center",color:"#000" }}>
         <TelegramIcon fontSize="small" />
-        <Typography sx={{ marginTop: "5px" }}>{shares}</Typography>
+        <Typography sx={{ marginTop: "5px" ,color:"#000"}}>{shares}</Typography>
       </Box>
-      <Box sx={{ padding: "10px", textAlign: "center" }}>
+      <Box sx={{ padding: "10px", textAlign: "center",color:"#000" }}>
+        <BookmarkBorderIcon fontSize="small" />
+        <Typography sx={{ marginTop: "5px" ,color:"#000"}}>{shares}</Typography>
+      </Box>
+      <Box sx={{ padding: "10px", textAlign: "center",color:"#000" }}>
         <MoreVertIcon fontSize="small" />
       </Box>
     </Box>
