@@ -81,7 +81,7 @@ const Reel = ({
           position: "relative",
           backgroundColor: "white",
           width: "100%",
-          height: "100vh",
+          height: "98vh",
           scrollSnapAlign: "start",
           display: "flex",
           flexDirection: "column",
@@ -96,7 +96,7 @@ const Reel = ({
             width: "100%",
             height: "100%",
             cursor: "pointer",
-            padding: 10,
+            padding: 4,
             borderRadius: "14px",
           }}
           loop
