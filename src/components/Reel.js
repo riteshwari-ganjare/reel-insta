@@ -94,7 +94,7 @@ const Reel = ({
           style={{
             objectFit: "cover",
             width: "100%",
-            height: "100%",
+            height: "98%",
             cursor: "pointer",
             padding: 4,
             borderRadius: "14px",

@@ -16,9 +16,9 @@ const App = () => {
         <div className="app-videos">
           <Reel
             url="https://res.cloudinary.com/dxkxvfo2o/video/upload/v1608169738/video1_cvrjfm.mp4"
-            channel="ActionReplay"
-            description="windows editing beast"
-            song="i am a windows PC"
+            channel="Ritu"
+            description="Try to understand"
+            song="I am One Poem"
             likes={239}
             shares={345}
             messages={890}
@@ -27,8 +27,8 @@ const App = () => {
           />
           <Reel
             url="https://res.cloudinary.com/dxkxvfo2o/video/upload/v1608169739/video2_mecbdo.mp4"
-            channel="TechKnowledge"
-            description="live in Windows"
+            channel="Riteshwari Ganjare"
+            description="Live in Peace"
             song="Kdenlive is great"
             likes={390}
             shares={355}
